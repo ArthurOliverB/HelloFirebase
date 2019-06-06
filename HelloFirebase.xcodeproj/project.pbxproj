@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53B575D922A9D35E00FC8100 /* Curso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B575D822A9D35E00FC8100 /* Curso.swift */; };
+		53B575DB22A9D5A700FC8100 /* CursoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B575DA22A9D5A700FC8100 /* CursoTableViewCell.swift */; };
+		53B575DD22A9D5B300FC8100 /* CursosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B575DC22A9D5B300FC8100 /* CursosTableViewController.swift */; };
+		53FD449322A734A4009CD184 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53FD449222A734A4009CD184 /* GoogleService-Info.plist */; };
 		717BD03F228E1F2B00A94AF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717BD03E228E1F2B00A94AF0 /* AppDelegate.swift */; };
 		717BD041228E1F2B00A94AF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717BD040228E1F2B00A94AF0 /* ViewController.swift */; };
 		717BD044228E1F2B00A94AF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 717BD042228E1F2B00A94AF0 /* Main.storyboard */; };
@@ -19,6 +23,10 @@
 /* Begin PBXFileReference section */
 		32E4D99FCA6990D93A115820 /* Pods_HelloFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B347CAA011D80E61E84D41 /* Pods-HelloFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloFirebase.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloFirebase/Pods-HelloFirebase.release.xcconfig"; sourceTree = "<group>"; };
+		53B575D822A9D35E00FC8100 /* Curso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curso.swift; sourceTree = "<group>"; };
+		53B575DA22A9D5A700FC8100 /* CursoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursoTableViewCell.swift; sourceTree = "<group>"; };
+		53B575DC22A9D5B300FC8100 /* CursosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursosTableViewController.swift; sourceTree = "<group>"; };
+		53FD449222A734A4009CD184 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		717BD03B228E1F2B00A94AF0 /* HelloFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		717BD03E228E1F2B00A94AF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		717BD040228E1F2B00A94AF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,13 +80,17 @@
 		717BD03D228E1F2B00A94AF0 /* HelloFirebase */ = {
 			isa = PBXGroup;
 			children = (
-				717BD03E228E1F2B00A94AF0 /* AppDelegate.swift */,
 				717BD040228E1F2B00A94AF0 /* ViewController.swift */,
+				53B575DC22A9D5B300FC8100 /* CursosTableViewController.swift */,
+				53B575DA22A9D5A700FC8100 /* CursoTableViewCell.swift */,
+				53B575D822A9D35E00FC8100 /* Curso.swift */,
+				717BD05422A2EBD000A94AF0 /* Item.swift */,
 				717BD042228E1F2B00A94AF0 /* Main.storyboard */,
 				717BD045228E1F2D00A94AF0 /* Assets.xcassets */,
+				717BD03E228E1F2B00A94AF0 /* AppDelegate.swift */,
 				717BD047228E1F2D00A94AF0 /* LaunchScreen.storyboard */,
+				53FD449222A734A4009CD184 /* GoogleService-Info.plist */,
 				717BD04A228E1F2D00A94AF0 /* Info.plist */,
-				717BD05422A2EBD000A94AF0 /* Item.swift */,
 			);
 			path = HelloFirebase;
 			sourceTree = "<group>";
@@ -152,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				717BD049228E1F2D00A94AF0 /* LaunchScreen.storyboard in Resources */,
+				53FD449322A734A4009CD184 /* GoogleService-Info.plist in Resources */,
 				717BD046228E1F2D00A94AF0 /* Assets.xcassets in Resources */,
 				717BD044228E1F2B00A94AF0 /* Main.storyboard in Resources */,
 			);
@@ -211,7 +224,10 @@
 			files = (
 				717BD05522A2EBD000A94AF0 /* Item.swift in Sources */,
 				717BD041228E1F2B00A94AF0 /* ViewController.swift in Sources */,
+				53B575DD22A9D5B300FC8100 /* CursosTableViewController.swift in Sources */,
+				53B575D922A9D35E00FC8100 /* Curso.swift in Sources */,
 				717BD03F228E1F2B00A94AF0 /* AppDelegate.swift in Sources */,
+				53B575DB22A9D5A700FC8100 /* CursoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +381,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.valente.HelloFirebase;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arthur.HelloFirebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -384,7 +400,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.valente.HelloFirebase;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arthur.HelloFirebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
