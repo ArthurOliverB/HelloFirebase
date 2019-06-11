@@ -10,6 +10,11 @@ import UIKit
 
 class CursoTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var cursoImageView: UIImageView!
+    @IBOutlet weak var cursoTituloLabel: UILabel!
+    @IBOutlet weak var cursoAutorLabel: UILabel!
+    @IBOutlet weak var cursoRatingLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

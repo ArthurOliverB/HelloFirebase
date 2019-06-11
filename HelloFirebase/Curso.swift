@@ -9,17 +9,27 @@
 import UIKit
 import Firebase
 
-class Instrutor {
+enum TipoCurso: String {
+    case Cul
+    case Dev
+    case Fin
+    
+    func tipo() -> String {
+        return self.rawValue.lowercased()
+    }
+}
+
+class Curso {
     var nome: String
-    var rating: Int
+    var rating: Float
     
     var ementa: String
-    var tipo: String
+    var tipo: TipoCurso
     var preco: Double
     
     var ref: DatabaseReference?
     
-    init(nome:String, tipo: String, ementa: String, rating:Int, preco: Double, ref:DatabaseReference?) {
+    init(nome:String, tipo: TipoCurso, ementa: String, rating:Float, preco: Double, ref:DatabaseReference?) {
         self.nome = nome
         self.tipo = tipo
         self.rating = rating
@@ -30,6 +40,6 @@ class Instrutor {
     }
     
     func toAnyObject() -> Any {
-        return ["nome":nome, "tipo": tipo, "ementa": ementa, "rating":rating, "preco": preco]
+        return ["nome":nome, "tipo": tipo.tipo(), "ementa": ementa, "rating":rating, "preco": preco]
     }
 }

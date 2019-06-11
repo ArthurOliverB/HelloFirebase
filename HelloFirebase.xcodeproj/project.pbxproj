@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		535B765D22B072DD00E16BFD /* AdicionarCursoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535B765C22B072DD00E16BFD /* AdicionarCursoTableViewController.swift */; };
 		53B575D922A9D35E00FC8100 /* Curso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B575D822A9D35E00FC8100 /* Curso.swift */; };
 		53B575DB22A9D5A700FC8100 /* CursoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B575DA22A9D5A700FC8100 /* CursoTableViewCell.swift */; };
 		53B575DD22A9D5B300FC8100 /* CursosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B575DC22A9D5B300FC8100 /* CursosTableViewController.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		32E4D99FCA6990D93A115820 /* Pods_HelloFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B347CAA011D80E61E84D41 /* Pods-HelloFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloFirebase.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloFirebase/Pods-HelloFirebase.release.xcconfig"; sourceTree = "<group>"; };
+		535B765C22B072DD00E16BFD /* AdicionarCursoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdicionarCursoTableViewController.swift; sourceTree = "<group>"; };
 		53B575D822A9D35E00FC8100 /* Curso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curso.swift; sourceTree = "<group>"; };
 		53B575DA22A9D5A700FC8100 /* CursoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursoTableViewCell.swift; sourceTree = "<group>"; };
 		53B575DC22A9D5B300FC8100 /* CursosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursosTableViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				717BD047228E1F2D00A94AF0 /* LaunchScreen.storyboard */,
 				53FD449222A734A4009CD184 /* GoogleService-Info.plist */,
 				717BD04A228E1F2D00A94AF0 /* Info.plist */,
+				535B765C22B072DD00E16BFD /* AdicionarCursoTableViewController.swift */,
 			);
 			path = HelloFirebase;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				717BD05522A2EBD000A94AF0 /* Item.swift in Sources */,
 				717BD041228E1F2B00A94AF0 /* ViewController.swift in Sources */,
 				53B575DD22A9D5B300FC8100 /* CursosTableViewController.swift in Sources */,
+				535B765D22B072DD00E16BFD /* AdicionarCursoTableViewController.swift in Sources */,
 				53B575D922A9D35E00FC8100 /* Curso.swift in Sources */,
 				717BD03F228E1F2B00A94AF0 /* AppDelegate.swift in Sources */,
 				53B575DB22A9D5A700FC8100 /* CursoTableViewCell.swift in Sources */,

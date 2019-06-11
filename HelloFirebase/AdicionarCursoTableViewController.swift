@@ -1,21 +1,29 @@
 //
-//  CursosTableViewController.swift
+//  AdicionarCursoTableViewController.swift
 //  HelloFirebase
 //
-//  Created by Aluno R17 on 06/06/2019.
+//  Created by Aluno R17 on 11/06/2019.
 //  Copyright © 2019 Daniel Valente. All rights reserved.
 //
 
 import UIKit
-import Firebase
 
-class CursosTableViewController: UITableViewController {
-    
-    var cursos = [Curso]()
+class AdicionarCursoTableViewController: UITableViewController {
+
+    @IBOutlet weak var tituloTextField: UITextField!
+    @IBOutlet weak var tipoSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var notasTextField: UITextField!
+    @IBOutlet weak var ratingTextField: UITextField!
+    @IBOutlet weak var precoTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func didReceiveMemoryWarning() {
@@ -89,11 +97,15 @@ class CursosTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func SairAction(_ sender: Any) {
-        try? Auth.auth().signOut()
-        print("Usuário deslogado!")
-        self.dismiss(animated: true, completion: nil)
+   
+    @IBAction func SalvarAction(_ sender: Any) {
+        let titulo = self.tituloTextField.text!
+        let tipo = self.tipoSegmentedControl.titleForSegment(at: tipoSegmentedControl.selectedSegmentIndex)
+        
+        
+        let novoCurso = Curso(nome: titulo, tipo: <#T##TipoCurso#>, ementa: <#T##String#>, rating: <#T##Float#>, preco: <#T##Double#>, ref: <#T##DatabaseReference?#>)
+        
+        self.ref.child("items").childByAutoId().setValue(newItem.toAnyObject())
     }
-    
     
 }
